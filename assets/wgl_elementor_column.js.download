@@ -1,0 +1,16 @@
+( function( $, window ) {
+    'use strict';
+    $(window).on('labida/frontend/init', function (){
+        if ( window.labidaFrontend.isEditMode() ) {
+            
+            window.labidaFrontend.hooks.addAction( 'frontend/element_ready/column',
+                function( $scope ){ 
+                    zikzag_sticky_sidebar();
+                }
+            );
+        
+        }
+
+    });
+}( jQuery, window ) );
+
