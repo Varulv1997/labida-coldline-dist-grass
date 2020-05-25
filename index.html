@@ -25,6 +25,85 @@ var s = document.getElementsByTagName( 'script' )[0];
 s.parentNode.insertBefore( wf, s );
 })();
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<style>
+.xwrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column;
+}
+:root {
+  --select-input: 15rem;
+  --select-menu: 16.2rem;
+}
+.select__wrapper {
+  position: relative;
+  margin-top: 4.5rem;
+}
+.select__label {
+  position: absolute;
+  top: -1.5rem;
+  left: 2px;
+}
+.select__input {
+  width: var(--select-input);
+  height: 2.2rem;
+  background: rgb(17, 17, 21) !important;
+  border: none;
+  color:#fff !important;
+  border-radius:5px;
+  border-bottom: 2px solid #ccc;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.select__input:focus {
+  color:#fff !important;
+}
+.select__input:active {
+  color:#fff !important;
+}
+.select__icon {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+  cursor: pointer;
+}
+.select__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  background-color: #1e1d23;
+  min-width: 8.2rem;
+  z-index: 1;
+  max-height: var(--select-input);
+  overflow: auto;
+  height: 0;
+  width: 56px !important;
+  -webkit-transition: all 0.33s;
+  transition: all 0.33s;
+  cursor: pointer;
+}
+.select__menu-item {
+  line-height: 1.5rem;
+  padding-left: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px !important;
+  -webkit-transition: all 0.33s;
+  transition: all 0.33s;
+}
+.select__menu-item:hover {
+  background: transparent;
+}
+</style>
 					<meta name="robots" content="noindex,nofollow">
 						<link rel="dns-prefetch" href="https://s.w.org/">
 						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" integrity="sha256-CuUPKpitgFmSNQuPDL5cEfPOOJT/+bwUlhfumDJ9CI4=" crossorigin="anonymous" />
@@ -3390,6 +3469,16 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 																																																																																								<div class="labida-element labida-element-316ff5d labida-widget labida-widget-google_maps" data-id="316ff5d" data-element_type="widget" data-widget_type="google_maps.default">
 																																																																																									<div class="labida-widget-container"></div>
 																																																																																								<img style="width:175px; float: right;" src="assets/signature.png">
+																																																																																								<!-- partial:index.partial.html -->
+<div class="select__wrapper" data-select="kubernetes" style="margin-right: 4px !important;padding-right: 4px !important;right: -135px;">
+  <input class="select__input" type="text" style="
+    width: 132px;
+" placeholder="Language"/><i class="select__icon fa fa-caret-down" style="display: none;" aria-hidden="true"></i>
+  <ul class="select__menu" style="width: 8.2rem !important;">
+    <li onclick="doGTranslate('en|fr')" class="select__menu-item">English</li>
+    <li onclick="doGTranslate('fr|en')" class="select__menu-item">Français</li>
+  </ul>
+</div>
 																																																																																								</div>
 																																																																																							</div>
 																																																																																						</div>
@@ -3568,7 +3657,43 @@ var labidaFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"
         <script src="assets\js\popper.min.js"></script>
 
         <!-- Mixit Up JS -->
-        <script src="assets\js\jquery.mixitup.min.js"></script>																																																																									<script type="text/javascript" src="./assets/frontend.min.js.download"></script>
+        <script src="assets\js\jquery.mixitup.min.js"></script>	
+		<script type="text/javascript" src="./assets/frontend.min.js.download"></script>
+		<script>
+"use strict";
+var $ = function (selector) {
+    return document.querySelector(selector);
+};
+var $$ = function (selector) {
+    return document.querySelectorAll(selector);
+};
+// -
+var select = function (name) {
+    var selectName = ".select__wrapper[data-select=" + name + "]";
+    var input = $(selectName + " .select__input");
+    var icon = $(selectName + " .select__icon");
+    var menu = $(selectName + " .select__menu");
+    var menuItem = $$(".select__wrapper[data-select=" + name + "] .select__menu-item");
+    input.onclick = function () {
+        icon.classList.remove('fa-caret-down');
+        icon.classList.add('fa-caret-up');
+        menu.style.height = 'auto';
+        menu.style.boxShadow = '0px 8px 12px 2px rgba(0, 0, 0, .2)';
+    };
+    [].forEach.call(menuItem, function (item) {
+        item.onclick = function () {
+            input.value = item.textContent;
+            icon.classList.remove('fa-caret-up');
+            icon.classList.add('fa-caret-down');
+            menu.style.height = '0';
+            menu.style.width = '0';
+            menu.style.boxShadow = 'none';
+        };
+    });
+};
+select('kubernetes');
+select('frameworks');
+</script>
 																																																																												<span id="labida-device-mode" class="labida-screen-only"></span>
 																																																																												<script id="wgl_custom_footer_js"></script>
 																																																																												<div id="i4c-dialogs-container"></div>
