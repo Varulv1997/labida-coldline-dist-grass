@@ -1,4 +1,4 @@
-@charset "UTF-8";@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");.labida-editor-active .wgl-env-theme_toolbar{display:none;}
+.labida-editor-active .wgl-env-theme_toolbar{display:none;}
 .wgl-env-theme_toolbar{position:absolute;z-index:400;}
 .wgl-env-theme__wrapper{position:fixed;z-index:100000;top:0;bottom:0;right:0;width:360px;background:#fff;transform:translateX(100%);transition:transform .45s ease-in-out;}
 .wgl-env-theme__wrapper .wgl-toolbar_wrapper{margin-bottom:44px;}
