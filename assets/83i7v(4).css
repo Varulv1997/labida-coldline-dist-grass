@@ -418,12 +418,12 @@ body:not(.labida-editor-active) .wgl-theme-header .labida-column, body:not(.labi
 .wgl-header-row .header_side.display_grow .primary-nav > .menu{white-space:nowrap;}
 .wgl-header-row .header_side.v_align_middle{align-self:center;}
 .wgl-header-row .header_side.v_align_bottom{align-self:flex-end;}
-.wgl-header-row .header_side.v_align_bottom .primary-nav > ul > li > a{align-self:flex-end;align-items:flex-end;font-family:Raleway}
+.wgl-header-row .header_side.v_align_bottom .primary-nav > ul > li > a{align-self:flex-end;align-items:flex-end;font-family:Raleway !important;}
 .wgl-header-row .header_side.v_align_bottom .header_area_container > *,
 .wgl-header-row .header_side.v_align_bottom .header_search-button{vertical-align:bottom;}
 .wgl-header-row .header_side.v_align_top{align-self:flex-start;}
 .wgl-header-row .header_side.v_align_top .primary-nav .lavalamp-object{top:0;bottom:auto;margin-top:0 !important;}
-.wgl-header-row .header_side.v_align_top .primary-nav > ul > li > a{align-self:flex-start;align-items:flex-start;}
+.wgl-header-row .header_side.v_align_top .primary-nav > ul > li > a{align-self:flex-start;align-items:flex-start;font-family:Raleway !important;}
 .wgl-header-row .header_side.v_align_top .header_area_container > *,
 .wgl-header-row .header_side.v_align_top .header_search-button{vertical-align:top;}
 .wgl-header-row .header_side.h_align_left{text-align:left;}
@@ -478,7 +478,7 @@ body:not(.labida-editor-active) .wgl-theme-header .labida-column, body:not(.labi
 .primary-nav > ul li.mega-menu{position:static !important;}
 .primary-nav > ul li.mega-menu > ul.mega-menu{left:auto;}
 .primary-nav > ul{height:100%;padding:0;margin:0;}
-.primary-nav > ul > li{height:100%;}
+.primary-nav > ul > li{height:100%;font-family:Raleway !important;}
 .primary-nav > ul > li.current-menu-item > a:before, .primary-nav > ul > li.current_page_item > a:before, .primary-nav > ul > li.current-menu-parent > a:before, .primary-nav > ul > li.current_page_parent > a:before, .primary-nav > ul > li.current-menu-ancestor > a:before, .primary-nav > ul > li.current_page_ancestor > a:before{height:33%;}
 .primary-nav > ul > li.mega-menu-links > ul.mega-menu{padding-left:10px;padding-right:10px;}
 .primary-nav > ul > li > a{display:flex;position:relative;z-index:1;height:100%;align-items:center;vertical-align:middle;padding:0 32px;color:inherit;text-transform:initial;opacity:1;transition:0.2s;}
