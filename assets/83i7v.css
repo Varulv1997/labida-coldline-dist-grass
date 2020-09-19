@@ -358,7 +358,7 @@ rs-sbg-wrap rs-dotted{z-index:31}
 100%{opacity:0;top:29%;}
 }
 .rev-scroll-btn{display:inline-block;position:relative;left:0;right:0;text-align:center;cursor:pointer;width:35px;height:55px;box-sizing:border-box;border:3px solid white;border-radius:23px;}
-.rev-scroll-btn > *{display:inline-block;line-height:18px;font-size:13px;font-weight:normal;color:#7f8c8d;color:#ffffff;font-family:"proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;letter-spacing:2px;}
+.rev-scroll-btn > *{display:inline-block;line-height:18px;font-size:13px;font-weight:normal;color:#2a2731;color:#ffffff;font-family:"proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;letter-spacing:2px;}
 .rev-scroll-btn > *:hover,
 .rev-scroll-btn > *:focus,
 .rev-scroll-btn > *.active{color:#ffffff;}

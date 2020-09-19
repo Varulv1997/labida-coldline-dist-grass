@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6{color:#2a2731;}
 .features-section .features-card.feature-one:hover{background:#47CEAB;}
 .features-section .features-card.feature-two i{color:#47CEAB;background:#ffd7ca;}
 .features-section .features-card.feature-two:hover{background:#47CEAB;}
-.features-section .features-card.feature-three i{color:#2a2731;background:#e1e6f8;}
+.features-section .features-card.feature-three i{color:#2a2731;background:#2a2731;}
 .features-section .features-card.feature-three:hover{background:#2a2731;}
 .features-section .features-card.feature-four i{color:#47CEAB;background:#fff9e6;}
 .features-section .features-card.feature-four:hover{background:#47CEAB;}
@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6{color:#2a2731;}
 .footer-area .copyright-area ul li a{color:#FFFFFF;}
 .footer-area .copyright-area ul li a:hover{color:#47CEAB;}
 .footer-area .copyright-area ul:nth-child(2)::before{display:none;}
-.header-style-two{background:#071d24;}
+.header-style-two{background:#2a2731;}
 .header-style-two .header-left-text ul li{color:#95999a;}
 .header-style-two .header-left-text ul li a{color:#95999a;}
 .navbar-style-two .main-nav{background:#2a2731;border-bottom:2px solid #2a2731;}
