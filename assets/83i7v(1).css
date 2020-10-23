@@ -16,20 +16,20 @@
 .wgl-env-theme__wrapper .wgl-env-theme__btn .toolbar_link.toolbar_btn-support:hover{background:#f3f3f3;color:#232323;}
 .wgl-env-theme__wrapper .wgl-toolbar_title{margin-bottom:14px;position:relative;text-align:left;}
 .wgl-env-theme__wrapper .wgl-toolbar_title_wrapper{position:relative;z-index:1;display:flex;align-items:center;}
-.wgl-env-theme__wrapper .wgl-toolbar_title_inner{font-size:14px;color:#363439;border-radius:5px;line-height:28px;display:inline-block;box-shadow:3px 3px 10px 0px rgba(0, 0, 0, 0.15);text-transform:uppercase;padding:0 9px;margin-right:21px;font-weight:700;font-family:'Nunito Sans';}
+.wgl-env-theme__wrapper .wgl-toolbar_title_inner{font-size:14px;color:#2a2731;border-radius:5px;line-height:28px;display:inline-block;box-shadow:3px 3px 10px 0px rgba(0, 0, 0, 0.15);text-transform:uppercase;padding:0 9px;margin-right:21px;font-weight:700;font-family:'Nunito Sans';}
 .wgl-env-theme__wrapper .wgl-toolbar_line{display:block;height:1px;background:#e5e5e5;width:100%;flex:1;}
 .wgl-env-theme__wrapper .wgl-toolbar_line:after{content:'';position:absolute;z-index:1;height:3px;width:40px;background:#47CEAB;border-radius:1.5px;right:0;top:50%;margin-top:-1.5px;}
 .wgl-env-theme__wrapper .wgl-toolbar_content{display:flex;justify-content:space-between;align-items:center;margin-top:6px;}
 .wgl-env-theme__wrapper .wgl-toolbar_image{padding-top:10px;transform:translateY(0);transition:0.5s;}
 .wgl-env-theme__wrapper .wgl-toolbar_image img{border-radius:5px;box-shadow:5px 4px 16px 0px rgba(0, 0, 0, 0.15);transition:.5s;}
-.wgl-env-theme__wrapper .wgl-toolbar__desc .wgl-toolbar__title{font-size:16px;font-weight:bold;color:#363439;font-family:'Nunito Sans';}
+.wgl-env-theme__wrapper .wgl-toolbar__desc .wgl-toolbar__title{font-size:16px;font-weight:bold;color:#2a2731;font-family:'Nunito Sans';}
 .wgl-env-theme__wrapper .wgl-toolbar__desc .wgl-toolbar__cats{font-size:13px;font-weight:700;color:#bcbcbc;font-family:'Nunito Sans';text-transform:uppercase;}
 .wgl-env-theme__wrapper .wgl-toolbar__price{font-size:16px;font-weight:700;color:#47CEAB;font-family:'Nunito Sans';}
 .wgl-env-theme__wrapper .wgl-toolbar__desc .wgl-toolbar__cats:before{content:'/';margin-left:5px;margin-right:5px;font-size:16px;}
 .wgl-env-theme__inner{max-height:calc(100% - 30px);padding:48px 30px 20px;text-align:center;box-sizing:border-box;overflow-x:hidden;overflow-y:scroll;overscroll-behavior-y:contain;transition:0.3s ease-in;scrollbar-width:none;}
 .wgl-env-theme__inner::-webkit-scrollbar{display:none}
 .wgl-env-theme_toolbar.open .wgl-env-theme__wrapper{transform:translateX(0);}
-.wgl-env-theme_toolbar .wgl-env-theme__toggle{position:absolute;bottom:calc(50% - 230px);left:-40px;display:flex;justify-content:flex-start;align-items:center;text-align:center;cursor:pointer;line-height:40px;transition:0.45s ease-in-out;background-color:#e41134;color:rgba(255,255,255,1);border-radius:0px 5px 5px 0px;padding:15px 0px 15px;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;text-orientation:mixed;white-space:nowrap;transform:rotate(180deg);font-size:15px;font-weight:bold;font-family:'Nunito Sans';overflow:hidden;max-height:250px;height:200px;min-width:40px;}
+.wgl-env-theme_toolbar .wgl-env-theme__toggle{position:absolute;bottom:calc(50% - 230px);left:-40px;display:flex;justify-content:flex-start;align-items:center;text-align:center;cursor:pointer;line-height:40px;transition:0.45s ease-in-out;background-color:#42afaf;color:rgba(255,255,255,1);border-radius:0px 5px 5px 0px;padding:15px 0px 15px;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;text-orientation:mixed;white-space:nowrap;transform:rotate(180deg);font-size:15px;font-weight:bold;font-family:'Nunito Sans';overflow:hidden;max-height:250px;height:200px;min-width:40px;}
 .wgl-env-theme_toolbar .wgl-env-theme__toggle .wgl-env-theme-close_icon{position:absolute;margin-top:34px;transition:.45s;}
 .wgl-env-theme_toolbar.active .wgl-env-theme__toggle .wgl-env-theme-close_icon{opacity:0;visibility:hidden;}
 .wgl-env-theme_toolbar.active .wgl-env-theme__toggle{max-height:54px;}
